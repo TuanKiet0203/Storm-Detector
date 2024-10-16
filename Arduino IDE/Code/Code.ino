@@ -174,7 +174,7 @@ void TinHieuSet() {
 
 int DoLuongMua() {
   int sensorValue = analogRead(A0);
-  int Nguong[4] = {1000, 2000, 3000 ,4000};
+  int Nguong[4] = {600, 1500, 2000 ,2200};
   if (sensorValue < Nguong[0]) return 0;
   else if ((sensorValue >= Nguong[0]) && (sensorValue < Nguong[1])) return 25;
   else if ((sensorValue >= Nguong[1]) && (sensorValue < Nguong[2])) return 50;
